@@ -1,6 +1,6 @@
 load_model='/kaggle/input/rwkv-7-2b/rwkv7-g1-2.9b-20250519-ctx4096.pth'
 proj_dir='/kaggle/working/'
-data_file='/kaggle/input/zh-en-post-dataset/data_text_document'
+data_file='/kaggle/input/zh-en-post-dataset/split_part_1_text_document'
 
 n_layer=32
 n_embd=2560
