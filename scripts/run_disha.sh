@@ -5,12 +5,12 @@ data_file='/kaggle/input/zh-en-post-dataset/data_text_document'
 n_layer=32
 n_embd=2560
 
-micro_bsz=1
+micro_bsz=16
 epoch_save=5
 epoch_steps=200
 ctx_len=512
 
-disha_config='{"mode":"bone","load":"","r":64}'
+disha_config='{"mode":"bat","load":"","r":64}'
 
 
 python train.py --load_model $load_model \
@@ -21,6 +21,6 @@ python train.py --load_model $load_model \
 --ctx_len $ctx_len --micro_bsz $micro_bsz \
 --epoch_steps $epoch_steps --epoch_count 1 --epoch_begin 0 --epoch_save $epoch_save \
 --lr_init 2e-5 --lr_final 2e-5 --warmup_steps 0 --beta1 0.9 --beta2 0.99 --adam_eps 1e-8 \
---accelerator gpu --devices 2 --precision bf16 --strategy deepspeed_stage_1 --grad_cp 1 \
+--accelerator gpu --devices 1 --precision bf16 --strategy deepspeed_stage_1 --grad_cp 1 \
 --my_testing "x070" \
 --peft disha --disha_config $disha_config
