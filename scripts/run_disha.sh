@@ -8,7 +8,7 @@ n_embd=2560
 micro_bsz=1
 epoch_save=5
 epoch_steps=200
-ctx_len=256
+ctx_len=1024
 
 disha_config='{"mode":"bone","load":"","r":64}'
 
