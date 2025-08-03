@@ -5,12 +5,12 @@ data_file='/kaggle/input/zh-en-post-dataset/data_text_document'
 n_layer=32
 n_embd=2560
 
-micro_bsz=16
+micro_bsz=32
 epoch_save=5
 epoch_steps=200
 ctx_len=512
 
-disha_config='{"mode":"bone","load":"","r":64}'
+disha_config='{"mode":"bat","load":"","r":64}'
 
 
 python train.py --load_model $load_model \
