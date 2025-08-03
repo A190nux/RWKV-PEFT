@@ -5,7 +5,7 @@ data_file='/kaggle/input/zh-en-post-dataset'
 n_layer=32
 n_embd=2560
 
-micro_bsz=2
+micro_bsz=1
 epoch_save=5
 epoch_steps=200
 ctx_len=256
