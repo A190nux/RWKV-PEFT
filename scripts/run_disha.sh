@@ -1,4 +1,4 @@
-load_model='/kaggle/input/rwkv-pth/rwkv7-g1-2.9b-20250519-ctx4096.pth'
+load_model='/kaggle/input/rwkv-7-2b/rwkv7-g1-2.9b-20250519-ctx4096.pth'
 proj_dir='/kaggle/working/'
 data_file='/kaggle/input/zh-en-post-dataset/split_part_1_text_document'
 
