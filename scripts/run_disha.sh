@@ -1,4 +1,4 @@
-load_model='/kaggle/input/rwkv-pth/rwkv7-g1-2.9b-20250519-ctx4096.pth'
+load_model='/kaggle/working/rwkv-1-5.pth'
 proj_dir='/kaggle/working/'
 data_file='/kaggle/input/zh-en-post-dataset/split_part_2_text_document'
 
@@ -10,7 +10,7 @@ epoch_save=1
 epoch_steps=240
 ctx_len=512
 
-disha_config='{"mode":"bat","load":"/kaggle/input/rwkv-sft-tl-v1/rwkv-4.pth","r":64}'
+disha_config='{"mode":"bat","load":"","r":64}'
 
 
 python train.py --load_model $load_model \

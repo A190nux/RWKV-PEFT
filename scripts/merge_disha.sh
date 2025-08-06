@@ -1,6 +1,6 @@
-base_model='/home/rwkv/model/rwkv-x070-2b9-world-v3-preview-20250210-ctx4k.pth'
-peft_checkpoint='/home/rwkv/JL/out_model/v7-3b-disha/rwkv-0.pth'
-output='/home/rwkv/JL/model/v7-3b-disha.pth'
+base_model='/kaggle/input/rwkv-pth/rwkv7-g1-2.9b-20250519-ctx4096.pth'
+peft_checkpoint='/kaggle/input/rwkv-sft-tl-v1/rwkv-4.pth'
+output='/kaggle/working/rwkv-1-5.pth'
 
 
 python merge/merge_disha.py --base_model $base_model \
