@@ -1,6 +1,6 @@
 load_model='/kaggle/working/rwkv-1-5.pth'
 proj_dir='/kaggle/working/'
-data_file='/kaggle/input/zh-en-post-dataset/split_part_2_text_document'
+data_file='/kaggle/input/zh-en-post-dataset/split_part_1_text_document'
 
 n_layer=32
 n_embd=2560
