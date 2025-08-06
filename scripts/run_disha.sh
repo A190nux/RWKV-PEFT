@@ -10,7 +10,7 @@ epoch_save=1
 epoch_steps=240
 ctx_len=512
 
-disha_config='{"mode":"bat","load":"/kaggle/input/rwkv-sft-tl-v1/rwkv-4.pth","r":64}'
+disha_config='{"mode":"bat","load":"/kaggle/input/rwkv-sft-tl-v1/rwkv-5.pth","r":64}'
 
 
 python train.py --load_model $load_model \
