@@ -24,4 +24,3 @@ python train.py --load_model $load_model \
 --accelerator gpu --devices 1 --precision bf16 --strategy deepspeed_stage_1 --grad_cp 1 \
 --my_testing "x070" \
 --peft disha --disha_config $disha_config \
---op triton 
