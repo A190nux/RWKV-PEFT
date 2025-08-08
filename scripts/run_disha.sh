@@ -5,7 +5,7 @@ data_file='/kaggle/input/zh-en-post-dataset/split_part_5_text_document'
 n_layer=32
 n_embd=2560
 
-micro_bsz=16
+micro_bsz=1
 epoch_save=1
 epoch_steps=283
 ctx_len=512
