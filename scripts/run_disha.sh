@@ -1,13 +1,13 @@
-load_model='/kaggle/working/rwkv-2-5.pth'
+load_model='/kaggle/working/rwkv-3-5.pth'
 proj_dir='/kaggle/working/'
-data_file='/kaggle/input/zh-en-post-dataset/split_part_3_text_document'
+data_file='/kaggle/input/zh-en-post-dataset/split_part_4_text_document'
 
 n_layer=32
 n_embd=2560
 
 micro_bsz=16
 epoch_save=1
-epoch_steps=260
+epoch_steps=270
 ctx_len=512
 
 disha_config='{"mode":"bat","load":"","r":64}'
@@ -20,7 +20,7 @@ python train.py --load_model $load_model \
 --data_type binidx --dataload pad --loss_mask pad \
 --ctx_len $ctx_len --micro_bsz $micro_bsz \
 --epoch_steps $epoch_steps --epoch_count 5 --epoch_begin 0 --epoch_save $epoch_save \
---lr_init 2e-5 --lr_final 1e-6 --warmup_steps 50 --beta1 0.9 --beta2 0.99 --adam_eps 1e-8 \
+--lr_init 1e-5 --lr_final 5e-7 --warmup_steps 50 --beta1 0.9 --beta2 0.99 --adam_eps 1e-8 \
 --accelerator gpu --devices 1 --precision bf16 --strategy deepspeed_stage_1 --grad_cp 1 \
 --my_testing "x070" \
 --peft disha --disha_config $disha_config
