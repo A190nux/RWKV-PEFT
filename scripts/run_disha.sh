@@ -10,7 +10,7 @@ epoch_save=1
 epoch_steps=50
 ctx_len=18000
 
-disha_config='{"mode":"bone","load":"","r":64}'
+disha_config='{"mode":"bone","load":"","r":32}'
 
 
 python train.py --load_model $load_model \
