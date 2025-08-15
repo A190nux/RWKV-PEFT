@@ -5,7 +5,7 @@ data_file='/kaggle/input/cn-en-novels-dataset/data_binidx_text_document'
 n_layer=32
 n_embd=2560
 
-micro_bsz=8
+micro_bsz=6
 epoch_save=1
 epoch_steps=50
 ctx_len=6528
