@@ -8,7 +8,7 @@ n_embd=2560
 micro_bsz=2
 epoch_save=1
 epoch_steps=50
-ctx_len=6528
+ctx_len=6400
 
 disha_config='{"mode":"bat","load":"","r":64}'
 
