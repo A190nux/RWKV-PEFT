@@ -1,4 +1,4 @@
-load_model='/kaggle/working/rwkv-3b-stage2.pth'
+load_model='/kaggle/working/rwkv-3b-stage3.pth'
 proj_dir='/kaggle/working/'
 data_file='/kaggle/input/cn-en-novels-dataset/data_binidx_text_document'
 
